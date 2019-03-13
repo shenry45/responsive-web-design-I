@@ -100,7 +100,7 @@ header div {
 nav a {
 	margin-right: 8%;
 	text-decoration: none;
-	color: grey;
+	color: #b0b0b0;
 }
 
 header img {
@@ -159,7 +159,7 @@ footer p{
 	margin: 10px 0;
 }
 
-footer p.copyright {
+footer .copyright {
 	text-align: center;
 	margin: 50px 0;
 }
@@ -171,6 +171,10 @@ footer p.copyright {
 		padding: 0 30px;
 	}
 }
+
+/*--------------------
+TABLET 
+---------------------*/
 
 @media (max-width: 800px) {
 	header {
@@ -190,7 +194,7 @@ footer p.copyright {
 	header div {
 		display: block;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 	header img {
 		width: 200px;
@@ -207,6 +211,48 @@ footer p.copyright {
 	}
 }
 
-@media (max-width: 500px) {
+/*-----------------------------
+MOBILE 
+-----------------------------*/
 
+@media (max-width: 500px) {
+	.container {
+		padding: 0;
+	}
+	nav {
+		display: flex;
+		flex-flow: column nowrap;
+		text-align: center;
+		border-top: 1px solid #000;
+	}
+	nav a {
+		margin: 0;
+		padding: 20px 0;
+		border-bottom: 1px solid #000;
+		font-size: 20px;
+	}
+	hr {
+		margin: 0 20px 40px;
+		border-top: 2px solid #000;
+	}
+	section.hero {
+		padding: 30px 0;
+		margin-bottom: 20px;
+	}
+	section.info, section.divider, section.features, footer {
+		display: flex;
+		flex-flow: column nowrap;
+		padding: 0 20px;
+		margin: 0;
+	}
+	section.info div, section.features div {
+		 width: 100%;
+		 margin-bottom: 40px;
+	}
+	section.divider {
+		margin-bottom: 25px;
+	}
+	footer .copyright {
+		margin: 40px 0 20px;
+	}
 }
