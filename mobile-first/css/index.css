@@ -175,5 +175,45 @@ TABLET
 DESKTOP
 --------------------------*/
 @media (min-width: 800px) {
-
+	.container {
+		max-width: 1000px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	header {
+		flex-flow: row nowrap;
+		align-items: center;
+		padding: 20px 0;
+	}
+	header div {
+		margin: 0;
+	}
+	nav {
+		justify-content: space-between;
+		margin-right: 80px;
+		padding: 0;
+	}
+	nav a{
+		text-align: right;
+		font-weight: 100;
+	}
+	section.hero {
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.hero .slide-cont, .hero .slide-img {
+		display: inline-block;
+		width: 45%;
+	}
+	.hero img {
+		display: block;
+	}
+	section.features, section.features div {
+		margin-bottom: 0;
+	}
+	section.info div {
+		margin-bottom: 20px;
+	}
 }
