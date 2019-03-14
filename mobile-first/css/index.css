@@ -1,0 +1,179 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+ 
+/*-------------------------------
+MOBILE FIRST APPROACH
+
+Your code starts here!
+-------------------------------*/
+.container {
+	width: 100%;
+}
+header {
+	display: flex;
+	flex-flow: column-reverse nowrap;
+}
+nav {
+	display: flex;
+	flex-flow: column nowrap;
+	border-top: 1px solid #000;
+}
+nav a {
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid #000;
+	text-decoration: none;
+	color: #b0b0b0;
+	font-weight: bold;
+}
+header div {
+	text-align: center;
+	margin: 20px 0;
+}
+.hero {
+	padding: 40px 0;
+}
+.hero .slide-cont {
+	text-align: center;
+}
+.hero .slide-cont h1 {
+	font-size: 4.5em;
+}
+.hero button {
+	padding: 5px 45px;
+	background-color: #fff;
+	border: 1px solid #000;
+	outline: 0;	
+	color: #000;
+}
+.hero img {
+	display: none;
+}
+hr {
+	border-top: 2px solid #000;
+	margin: 30px 20px;
+}
+section.info, section.features{
+	display: flex;
+	flex-flow: column nowrap;	
+}
+section.info, section.features, section.divider, footer{
+	padding: 0 20px;
+}
+section.info div, section.features div{
+	margin-bottom: 50px;
+}
+section.features {
+	margin-bottom: 20px;
+}
+section.divider {
+	margin-bottom: 20px;
+}
+section.divider img {
+	width: 100%;
+}
+section.features div:last-child{
+	margin-bottom: 0;
+}
+footer address, footer p{
+	margin-bottom: 10px;
+}
+footer a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #000;
+}
+footer .copyright{
+	margin: 30px 0 10px;
+	text-align: center;
+}
+
+/*--------------------------
+TABLET
+--------------------------*/
+@media (min-width: 500px) {
+	nav{
+		width: 100%;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		border: 0;
+	}
+	nav a{
+		border: 0;
+	}
+	section.info, section.features {
+		flex-flow: row nowrap;
+	}
+	section.info div, section.features div {
+		padding-right: 40px;
+	}
+}
+
+/*--------------------------
+DESKTOP
+--------------------------*/
+@media (min-width: 800px) {
+
+}
